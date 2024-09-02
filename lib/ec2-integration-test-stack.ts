@@ -7,8 +7,8 @@ export class Ec2IntegrationTestStack extends cdk.Stack {
     super(scope, id, props);
 
     // Replace with your existing EC2 instance ID and EBS volume ID
-    const instanceId = 'i-0bcd606d19a82d357';  // Example EC2 instance ID
-    const volumeId = 'vol-055f56e73ef404439';  // Example EBS volume ID
+    const instanceId = 'i-0982bb309532a7b75';  // Example EC2 instance ID
+    const volumeId = 'vol-0903b23131f3f282a';  // Example EBS volume ID
 
     // Attach EBS Volume to EC2 Instance
     new ec2.CfnVolumeAttachment(this, 'VolumeAttachment', {

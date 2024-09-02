@@ -6,8 +6,8 @@ const ec2 = new AWS.EC2();
 
 test('EC2 instance should have an attached EBS volume', async () => {
   // Replace with your actual EC2 instance ID and EBS volume ID
-  const instanceId = 'i-0bcd606d19a82d357';
-  const volumeId = 'vol-055f56e73ef404439';
+  const instanceId = 'i-0982bb309532a7b75';
+  const volumeId = 'vol-0903b23131f3f282a';
 
   // Describe the instance
   const instanceData = await ec2.describeInstances({
